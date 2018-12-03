@@ -21,7 +21,6 @@
 
 # Imports:
 import numpy as np
-import scipy.special
 from math import e,sqrt,sin,cos
 
 # Identity function: 
@@ -35,10 +34,6 @@ def identity_deriv(x):
 # Binary step function:
 def step(x):
   return 0 if x < 0 else 1
-  
-# Sigmoid function using SciPy: 
-def expit(x):
-  return scipy.special.expit(x)
 
 # Sigmoid/logistic functions with Numpy:
 def logistic(x):
